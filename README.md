@@ -1,4 +1,6 @@
-# 🧱 CGBuilder
+<p align="center">
+  <img src="public/logo-with-name.svg" alt="CGBuilder" width="480">
+</p>
 
 **A browser-based visual editor for building Martini 3 coarse-grained molecule mappings.**
 
