@@ -22,21 +22,21 @@
     --border-light:    #e2e8f0;
     --border-input:    #c6cbd2;
 
-    --navbar-bg:       #1e293b;
+    --navbar-bg:       #34163b;
 
-    --color-primary:        #2b6cb0;
-    --chip-bg:              #ebf4ff;
-    --chip-border:          #90cdf4;
-    --chip-text:            #2b6cb0;
-    --chip-hover-bg:        #bee3f8;
-    --chip-hover-border:    #63b3ed;
+    --color-primary:        #71397f;
+    --chip-bg:              #f6f2f7;
+    --chip-border:          #d5bddb;
+    --chip-text:            #71397f;
+    --chip-hover-bg:        #eadeed;
+    --chip-hover-border:    #bd93c8;
 
-    --bead-selected-bg:     #dbeafe;
-    --bead-selected-border: #93c5fd;
-    --bead-selected-accent: #2563eb;
+    --bead-selected-bg:     #eee5f0;
+    --bead-selected-border: #d5bddb;
+    --bead-selected-accent: #9351a4;
 
     --toggle-off: #c6cbd2;
-    --toggle-on:  #2b6cb0;
+    --toggle-on:  #71397f;
 
     --color-success: #2bb673;
     --sasa-good:     #2bb673;
@@ -64,21 +64,21 @@
     --border-light:    #21262d;
     --border-input:    #30363d;
 
-    --navbar-bg:       #010409;
+    --navbar-bg:       #201022;
 
-    --color-primary:        #58a6ff;
-    --chip-bg:              #1f3358;
-    --chip-border:          #1f6feb;
-    --chip-text:            #58a6ff;
-    --chip-hover-bg:        #1d4086;
-    --chip-hover-border:    #388bfd;
+    --color-primary:        #bd93c8;
+    --chip-bg:              #2a192e;
+    --chip-border:          #894e98;
+    --chip-text:            #bd93c8;
+    --chip-hover-bg:        #3c2442;
+    --chip-hover-border:    #a465b3;
 
-    --bead-selected-bg:     #1e3a5f;
-    --bead-selected-border: #2563eb;
-    --bead-selected-accent: #60a5fa;
+    --bead-selected-bg:     #2a192e;
+    --bead-selected-border: #894e98;
+    --bead-selected-accent: #bd93c8;
 
     --toggle-off: #30363d;
-    --toggle-on:  #1f6feb;
+    --toggle-on:  #8f4ba0;
 
     --color-success: #3fb950;
     --sasa-good:     #3fb950;
@@ -120,12 +120,15 @@ body {
 }
 
 .navbar-brand {
-    font-size: 15px;
-    font-weight: 700;
-    color: white;
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
     padding-right: 8px;
-    letter-spacing: -0.01em;
+}
+
+.navbar-logo {
+    height: 32px;
+    width: auto;
+    display: block;
 }
 
 .navbar-tabs {
@@ -157,7 +160,7 @@ body {
 
 .navbar-tab.active {
     color: white;
-    border-bottom-color: #60a5fa;
+    border-bottom-color: #ac6bbd;
     font-weight: 600;
 }
 
@@ -242,6 +245,16 @@ body {
     border-radius: 6px;
 }
 
+.doc-content h1 .doc-heading-logo {
+    display: block;
+    height: 56px;
+    width: auto;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+    top: -12px;
+}
+
 .doc-content details {
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -297,6 +310,9 @@ body {
 }
 
 .doc-content h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 24px;
     font-weight: 700;
     margin: 0 0 24px;
