@@ -29,15 +29,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lp0lp/cgbuilder.git"
+    "url": "git+https://github.com/Martini-Force-Field-Initiative/cgbuilder/.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Luís Borges Araújo",
+    "email": "luis.borges@ens-lyon.fr"
+  },
+  "contributors": [
+    {
+      "name": "Pablo Cardona Perez",
+      "email": "pablo.cardona_perez@ens-lyon.fr"
+    }
+  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lp0lp/cgbuilder/issues"
+    "url": "https://github.com/Martini-Force-Field-Initiative/cgbuilder/issues"
   },
-  "homepage": "https://github.com/Lp0lp/cgbuilder#readme",
+  "homepage": "https://github.com/Martini-Force-Field-Initiative/cgbuilder#readme",
   "engines": {
     "node": ">=24 <25"
   },
