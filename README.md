@@ -6,11 +6,11 @@
 
 No installation is required. Open the site in a WebGL-capable browser:
 
-**[Open CGBuilder](https://lp0lp.github.io/cgbuilder/)**
+**[Open CGBuilder](https://cgmartini.nl/cgbuilder/)**
 
 Load an all-atom structure, map beads interactively in a 3D viewer, get automated bead-type predictions, compare SASA values against your AA reference, and export ready-to-use mapping files.
 
-> Fork of [jbarnoud/cgbuilder](https://github.com/jbarnoud/cgbuilder), substantially extended with weighted atom assignment, bead-type prediction, SASA comparison, [Shaker](https://github.com/Lp0lp/shaker)-format import/export, and more...
+> Fork of [jbarnoud/cgbuilder](https://github.com/jbarnoud/cgbuilder), substantially extended with weighted atom assignment, bead-type prediction, SASA comparison, [Shaker](https://github.com/Martini-Force-Field-Initiative/shaker)-format import/export, and more...
 
 ## Features
 
@@ -19,8 +19,8 @@ Load an all-atom structure, map beads interactively in a 3D viewer, get automate
 - **Bead-type prediction** — inspired by [AutoMartini](https://doi.org/10.1039/C9ME00183B), using RDKit fragment free-energy-of-transfer heuristics. Suggestion chips appear next to each field; applying them is always an explicit click.
 - **SASA comparison** — built-in Shrake-Rupley solver computes per-bead SASA and compares it against the all-atom reference surface rendered by NGL.
 - **Live validation** — multi-residue warnings, capped-heteroatom bond-cutting warnings, atom-overlap detection, and bead-count/size guidelines displayed as you work.
-- **[Shaker](https://github.com/Lp0lp/shaker)-format import** — paste an existing mapping to restore beads, types, charges, and atom assignments automatically.
-- **Export** — `.gro` (CG coordinates), `.ndx` (atom-index groups), `.map` (martinize/backward mapping), [Shaker](https://github.com/Lp0lp/shaker) Python dict, [Bartender](https://github.com/Martini-Force-Field-Initiative/Bartender) mapping, and AA SMILES.
+- **[Shaker](https://github.com/Martini-Force-Field-Initiative/shaker)-format import** — paste an existing mapping to restore beads, types, charges, and atom assignments automatically.
+- **Export** — `.gro` (CG coordinates), `.ndx` (atom-index groups), `.map` (martinize/backward mapping), [Shaker]([https://github.com/Lp0lp/shaker](https://github.com/Martini-Force-Field-Initiative/shaker)) Python dict, [Bartender](https://github.com/Martini-Force-Field-Initiative/Bartender) mapping, and AA SMILES.
 
 ## Input formats
 
@@ -38,7 +38,7 @@ Load an all-atom structure, map beads interactively in a 3D viewer, get automate
 | `.gro`            | CG bead coordinates in GROMACS format                                                                                          |
 | `.ndx`            | GROMACS index file — one group per bead, atoms by index                                                                        |
 | `.map`            | Martini backward/martinize mapping — `[ to ]`/`[ martini ]`/`[ atoms ]` sections                                               |
-| Shaker dict       | [Shaker](https://github.com/Lp0lp/shaker)-format Python assignment dict — bead names, types, charges, atom lists               |
+| Shaker dict       | [Shaker](https://github.com/Martini-Force-Field-Initiative/shaker)-format Python assignment dict — bead names, types, charges, atom lists               |
 | Bartender mapping | `BEADS` section + one line per bead with 1-based atom indices (repeated by weight)                                             |
 | PyCGTOOL mapping  | [PyCGTOOL](https://github.com/jag1g13/pycgtool) `.map` — `[ resname ]` section + one line per bead (`name type charge atoms…`) |
 | AA SMILES         | SMILES string for each bead's fragment (requires explicit H)                                                                   |
